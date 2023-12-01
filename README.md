@@ -16,7 +16,7 @@ images). Each domain contains seven categories.
 PACS dataset link: https://drive.google.com/file/d/1mcrwg5sYXgzweDKmeKLMUpiXX6hHCC7Y/view?usp=drive_link
 
 ## Code Structures
-To reproduce the demo experimentsfor DG, please use **train.py** & **test.py**.
+To reproduce the Demonstration experiment for DG, please use **train.py** & **test.py**.
  - `PACS`: Folder to store PACS data set.
  - `datasets.py`: Contains 3 different dataset classes. Suitable for different methods of training and testing
  - `utils.py`: Contains some usage code for building dataloader and setting seeds, etc.
@@ -29,30 +29,26 @@ To reproduce the demo experimentsfor DG, please use **train.py** & **test.py**.
 Please use **train.py** & **test.py** and follow the instructions below. 
 
 ## Arguments
-The train_fsl.py takes the following command line options (details are in the `config.py`):
+The **train.py** & **test.py** takes the following command line options (details are in the `config.py`):
 
 **Related Arguments**
-- `dataset`: Option for the dataset (`MiniImageNet`, `TieredImageNet`, or `CUB`), default to `MiniImageNet`
+- `epoch`: the number of training epoch
 
-- `way`: The number of classes in a few-shot task during meta-training, default to `5`
+- `lr`: The learning rate of training
 
-- `eval_way`: The number of classes in a few-shot task during meta-test, default to `5`
+- `weight_decay`: The weight_decay of training
 
-- `shot`: Number of instances in each class in a few-shot task during meta-training, default to `1`
+- `num_workers`: the num_workers of dataloader
 
-- `eval_shot`: Number of instances in each class in a few-shot task during meta-test, default to `1`
+- `batchsize`: the batchsize of dataloader
 
-- `query`: Number of instances in each class to evaluate the performance during meta-training, default to `15`
+## Training and testing scripts for Demonstration experiment
 
-- `eval_query`: Number of instances in each class to evaluate the performance during meta-test, default to `15`
-
-## Training scripts for UNICORN-MAML
-
-For example, to train the 1-shot/5-shot 5-way MAML/UNICORN-MAML model with ResNet-12 backbone on MiniImageNet:
+For example, to train the model with batchsize 32:
 
     $ python train.py --epoch 200 --lr 0.001 --weight_decay 0.0005 --num_workers 32 --batchsize 32
     
-For example, to train the 1-shot/5-shot 5-way MAML/UNICORN-MAML model with ResNet-12 backbone on MiniImageNet:
+For example, to test the model and get the result.csv
 
     $ python test.py --num_workers 32 --batchsize 32
 

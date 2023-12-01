@@ -25,7 +25,7 @@ To reproduce our experiments with UNICORN-MAML, please use **train_fsl.py**. The
  - `model.py`: Contains resnet network structure code for training and testing。
 
 ## Model Training and Evaluation
-Please use **train_fsl.py** and follow the instructions below. The file will automatically evaluate the model on the meta-test set with 10,000 tasks after given epochs.
+Please use **train.py** & **test.py** and follow the instructions below. 
 
 ## Arguments
 The train_fsl.py takes the following command line options (details are in the `model/utils.py`):

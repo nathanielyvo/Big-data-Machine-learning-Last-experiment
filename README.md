@@ -21,7 +21,8 @@ To reproduce our experiments with UNICORN-MAML, please use **train_fsl.py**. The
  - `datasets.py`: Contains 3 different dataset classes. Suitable for different methods of training and testing
  - `utils.py`: Contains some usage code for building dataloader and setting seeds, etc.
  - `train.py`: Code used for trainings.
- - `test.py`: Code used for testings.
+ - `test.py` : Code used for testings.
+ - `model.py`: Contains resnet network structure code for training and testing。
 
 ## Model Training and Evaluation
 Please use **train_fsl.py** and follow the instructions below. The file will automatically evaluate the model on the meta-test set with 10,000 tasks after given epochs.

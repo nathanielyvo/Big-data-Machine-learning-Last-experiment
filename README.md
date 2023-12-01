@@ -16,7 +16,7 @@ images). Each domain contains seven categories.
 PACS dataset link: https://drive.google.com/file/d/1mcrwg5sYXgzweDKmeKLMUpiXX6hHCC7Y/view?usp=drive_link
 
 ## Code Structures
-To reproduce our experiments with UNICORN-MAML, please use **train_fsl.py**. There are four parts in the code.
+To reproduce the demo experimentsfor DG, please use **train.py** & **test.py**.
  - `PACS`: Folder to store PACS data set.
  - `datasets.py`: Contains 3 different dataset classes. Suitable for different methods of training and testing
  - `utils.py`: Contains some usage code for building dataloader and setting seeds, etc.

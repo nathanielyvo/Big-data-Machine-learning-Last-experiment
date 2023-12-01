@@ -5,9 +5,8 @@
 
 The following packages are required to run the scripts:
 
-- [PyTorch-1.6 and torchvision](https://pytorch.org)
+- [PyTorch-2.0 and torchvision](https://pytorch.org)
 
-- Package [tensorboardX](https://github.com/lanpa/tensorboardX)
 ## Dataset
 
 PACS is an image dataset for domain generalization. It consists of four domains, namely 

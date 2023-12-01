@@ -13,7 +13,7 @@ PACS is an image dataset for domain generalization. It consists of four domains,
 Photo (1,670 images), Art Painting (2,048 images), Cartoon (2,344 images) and Sketch (3,929 
 images). Each domain contains seven categories.
 
-PACS dataset link: https://drive.google.com/file/d/1mcrwg5sYXgzweDKmeKLMUpiXX6hHCC7Y/view?usp=drive_link
+PACS dataset link: https://drive.google.com/file/d/13eZSqjGYR3cisCETFuhKmzHuBc_gtgsq/view?usp=sharing
 
 ## Code Structures
 To reproduce the Demonstration experiment for DG, please use **train.py** & **test.py**.

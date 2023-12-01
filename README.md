@@ -17,8 +17,8 @@ PACS dataset link: https://drive.google.com/file/d/1mcrwg5sYXgzweDKmeKLMUpiXX6hH
 
 ## Code Structures
 To reproduce our experiments with UNICORN-MAML, please use **train_fsl.py**. There are four parts in the code.
- - `model`: It contains the main files of the code, including the few-shot learning trainer, the dataloader, the network architectures, and baseline and comparison models.
- - `data`: Images and splits for the data sets.
+ - `PACS`: Folder to store PACS data set.
+ - `datasets.py`: Contains 3 different dataset classes. They are the dataset class containing all training domains, the dataset class containing a single domain, and the dataset class containing test data.、.
  - `saves`: The pre-trained weights of different networks.
  - `checkpoints`: To save the trained models.
 

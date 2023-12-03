@@ -17,7 +17,6 @@ if __name__ == '__main__':
 
     args = get_parser()
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
-    test_dataset =  PACS_test('PACS/test',data_transforms)
     label_reverse_list = ['dog','elephant','giraffe','guitar','horse','house','person']
 
     test_loader = get_dataloader_test(args)
